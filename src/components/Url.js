@@ -150,7 +150,7 @@ const ShortUrl = () => {
                     setInput({inputUrl: data.shortUrl});
                     setMessage([ ]);
                 }else {
-                    setMessage(data);
+                    setMessage([{message: data.message}]);
                     setRequestData(false);
                 }
             }
